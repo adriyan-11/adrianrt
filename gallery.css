@@ -186,7 +186,7 @@ background-position: center;
 div.polaroid {
   display: inline-block;
   margin: 5px;
-  width: 450px;
+  width: 405px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 20px;
@@ -199,7 +199,7 @@ div.polaroid:hover{
    background-color: skyblue;
 }
 div.polaroid img{
-    width:450px;
+    width:405px;
   height: 253.13px;
 }
 /*SCROLL ANIMATION*/
@@ -225,8 +225,8 @@ animation-range: entry 0% cover 40%;
 
 
 .container11{
-  width:460px;
-  height: 258.75px;
+  width:405px;
+  height: 253.13px;
   display: inline-block;
   padding: 10px;
 }
