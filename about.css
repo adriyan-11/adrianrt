@@ -1,232 +1,187 @@
+
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
-body{
-    background-color: #040720;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-nav {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav .mainMenu {
-    display: flex;
-    list-style: none;
-  }
-  nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    transition: 0.2s ease;
-  }
-  nav .mainMenu li a:hover {
-    background: rgb(255, 94, 0);
-  }
-  nav .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-  }
-  nav .mainMenu .closeMenu,
-  .icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-  }
-  .fa-facebook:hover {
-    color: rgb(0, 110, 255);
-  }
-  .fa-bluesky:hover {
-    color: rgb(86, 154, 243);
-  }
-  .fa-instagram:hover {
-    color: rgb(255, 0, 191);
-  }
-  .fa-link:hover {
-    color: rgb(255, 123, 0);
-  }
-      .fa-letterboxd:hover {
-    color: green;}
-    
-  nav .logo {
-    
-    margin: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  @media (max-width: 800px) {
-    nav .mainMenu {
-      height: 100vh;
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      left: 0px;
-      z-index: 10;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: rgb(0, 0, 0);
-      transition: top 1s ease 0s;
-      display: none;
-    }
-    nav .mainMenu .closeMenu {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    nav .openMenu {
-      display: block;
-    }
-    nav .mainMenu li a:hover {
-      background: none;
-      color: rgb(255, 123, 0);
-    }
-    .icons i {
-      display: inline-block;
-      padding: 12px;
-    }
-  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {
+  background-color: #040720;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
 
 .banner {
-width: 100%;
-height: 100vh;
-background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(assets/background.jpg);
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+   /*padding: 1rem;*/
 }
 
-/*LOGO ROTATION*/
-#box1{
-  animation: logo 5s infinite linear;
+nav {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
-@keyframes logo{
-  from{
-    transform: rotateY(0deg);
-  }
-  to{
-    transform: rotateY(359deg);
-  }
-}
-.logo #box1{
-  right: 100px;
-  transform: rotateY(90deg);
-}
-.logo{
+
+.logo {
   width: 50px;
   cursor: pointer;
 }
-/*NAVBUTTON*/
-.navbar ul li{
+
+#box1 {
+  animation: logo 5s infinite linear;
+}
+
+@keyframes logo {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+.mainMenu {
+  display: flex;
   list-style: none;
+}
+
+.mainMenu li a {
   display: inline-block;
-  margin: 0 20px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+}
+
+.openMenu,
+.closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.icons i {
+  font-size: 2rem;
+  margin: 0 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-bluesky:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-link:hover {
+  color: rgb(255, 123, 0);
+}
+.fa-letterboxd:hover {
+  color: green;
+}
+
+.content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.abouti {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.abouti h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.abouti h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.abouti h3 {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.abouti h6 {
+  font-size: 1rem;
+  text-align: right;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 2rem 0;
+}
+
+.logos {
+  overflow: hidden;
+  padding: 1rem 0;
+  background: black;
+  white-space: nowrap;
   position: relative;
 }
-.navbar ul li a{
-  font-size: 30px;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-.navbar ul li::after{
-  content: '';
-  height: 3px;
-  width: 0;
-  background: red;
+
+.logos:before,
+.logos:after {
   position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
   left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navbar ul li:hover::after{
-  width: 100%;
-}
-.content{
-  width: 100%;
-  position: top;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: #fff;
-}
-.content h1{
-  font-size: 30px;
-  margin-top: 80px;
-}
-.content p{
-  margin: 20px auto;
-  font-weight: 100;
-  line-height: 25px;
-}
-.abouti h1{
-  color: white;
-  font-size: 40px;
-  margin-top: 80px;
-  margin-left: 20px;
-   text-align: left;
-}
-.abouti h2{
-  color: White;
-  font-size: 30px;
-  margin-top: 10px;
-  margin-left: 50px;
-   text-align: left;
-}
-.abouti h6{
-  color: White;
-  font-size: 30px;
-  margin-top: 10px;
-  margin-right: 50px;
-   text-align: right;}
-
-.abouti h3{
-  color: darkgray;
-  font-size: 25px;
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 50px;
-   text-align: justify;
-text-indent: 30;
-}
-/*VIDEO*/
-.container{
-  margin-left: 50;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), black);
 }
 
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+}
 
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
 
+.logos-slide {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
 
-/*MARQUEE*/
-
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
 
 @keyframes slide {
   from {
@@ -237,45 +192,63 @@ text-indent: 30;
   }
 }
 
-.logos {
-  overflow: hidden;
-  padding: 10px 0;
-  background: black;
-  white-space: nowrap;
-  position: relative;
+@media (max-width: 800px) {
+  .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .openMenu {
+    display: block;
+  }
+
+  .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .abouti h1 {
+    font-size: 1.75rem;
+  }
+
+  .abouti h2 {
+    font-size: 1.25rem;
+  }
+
+  .abouti h3 {
+    font-size: 0.9rem;
+  }
+
+  .logos-slide img {
+    height: 40px;
+    margin: 0 20px;
+  }
 }
 
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 30px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.logos:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
-}
-
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
-}
-
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: 25s slide infinite linear;
-}
-
-.logos-slide img {
-  height: 50px;
-  margin: 0 13px;
-}
 
