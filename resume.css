@@ -203,12 +203,15 @@ padding: 1rem;
   }
 
   .icons i {
-    display: inline-block;
-    padding: 12px;
+    margin: 0 10px;
   }
 
   .content h1 {
     font-size: 2rem;
+  }
+
+  .content h6 {
+    font-size: 0.9rem;
   }
 
   .resume-container {
