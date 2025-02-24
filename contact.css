@@ -73,13 +73,14 @@ nav {
   display: none;
   cursor: pointer;
 }
-
 .icons i {
+  color: white;
   font-size: 2rem;
   margin: 0 5px;
   cursor: pointer;
   margin-top: 10px;
 }
+
 
 .fa-facebook:hover {
   color: rgb(0, 110, 255);

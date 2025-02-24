@@ -75,6 +75,7 @@ padding: 1rem;
 }
 
 .icons i {
+  color: white;
   font-size: 2rem;
   margin: 0 5px;
   cursor: pointer;
