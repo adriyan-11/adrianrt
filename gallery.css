@@ -213,3 +213,97 @@ nav {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow Styles */
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* sensible default, overridden by container */
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #770a0a;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.25);
+}
+
+/* Create a horizontal track that will be animated from right -> left */
+.slide-track {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* the animation is added dynamically via JS to allow pause/resume */
+}
+
+.slide {
+  flex: 0 0 auto; /* do not shrink or grow */
+  width: 250px; /* card width - adjust as needed */
+  height: 200px; /* card height */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transform-origin: center center;
+  transition: transform 240ms cubic-bezier(.2,.9,.2,1), box-shadow 240ms cubic-bezier(.2,.9,.2,1);
+  /* reduce non-centered slides slightly so center pop is more visible */
+  transform: scale(0.82);
+  opacity: 0.88;
+  will-change: transform, box-shadow, opacity;
+}
+
+/* Slightly pop up the slide when it reaches center */
+.slide.center {
+  transform: scale(1.26); /* stronger pop */
+  box-shadow: 0 18px 44px rgba(0,0,0,0.75);
+  z-index: 20;
+  opacity: 1;
+  border: 3px solid rgba(111, 11, 11, 0.85);
+}
+
+/* When container is hovered we pause the CSS animation set on .slide-track */
+.slideshow-container.pause .slide-track {
+  animation-play-state: paused !important;
+}
+
+/* Responsive: smaller slide sizes on small screens */
+@media (max-width: 800px) {
+  .slide {
+    width: 160px;
+    height: 120px;
+  }
+}
+
+.music-container {
+   display: flex;
+   justify-content: center;
+    margin-top: 40px;
+
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+ 
+}
+
+

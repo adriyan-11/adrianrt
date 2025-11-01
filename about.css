@@ -136,6 +136,11 @@ nav {
   text-align: right;
 }
 
+/* Small left indent for the runtime block so text isn't flush against the edge */
+.runtime {
+  padding-left: 35px;
+}
+
 hr {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
