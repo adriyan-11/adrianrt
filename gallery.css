@@ -240,7 +240,7 @@ nav {
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 1000px; /* sensible default, overridden by container */
+  max-width: 750px; /* sensible default, overridden by container */
   margin: 0 auto;
   overflow: hidden;
   border: 2px solid #770a0a;
